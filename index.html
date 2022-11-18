@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="content">
+        <div class="container">
+            <div class="title">
+                <h1 class="text-center">
+                    Cho người dùng nhập vào số nguyên và lưu trữ trong mảng.
+                    <br>
+                    Thiết kế layout cho người dùng thực hiện các chức năng theo yêu cầu
+                </h1>
+            </div>
+            <div class="calc mt-5">
+                <div class="input">
+                    <input id="inputNumber" type="number" class="w-50 me-5" placeholder="Thêm số">
+                    <button onclick="input()" class="btn btn-primary"> Thêm số</button>
+                    <p class="alert alert-success w-50" id="printArray"></p>
+                </div>
+                <div class="process">
+                    <div class="exercise mt-3">
+                        <p>Bài 1: Tính tổng số dương</p>
+                        <button onclick="calcPositiveNumber()" class="btn btn-primary"> Tính tổng</button>
+                        <p class="alert alert-success w-50" id="totalPositiveNumber"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 2: Đếm số dương</p>
+                        <button onclick="countPositiveNumber()" class="btn btn-primary"> Đếm số</button>
+                        <p class="alert alert-success w-50" id="countPositiveNumber"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 3: Tìm số nhỏ nhất</p>
+                        <button onclick="minNumber()" class="btn btn-primary"> Tìm số</button>
+                        <p class="alert alert-success w-50" id="minNumber"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 4: Tìm số dương nhỏ nhất</p>
+                        <button onclick="minPositiveNumber()" class="btn btn-primary"> Tìm số</button>
+                        <p class="alert alert-success w-50" id="minPositiveNumber"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 5: Tìm số chẵn cuối cùng</p>
+                        <button onclick="findNumber()" class="btn btn-primary"> Tìm số</button>
+                        <p class="alert alert-success w-50" id="lastEvenNumber"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 6: Đổi chỗ </p>
+                        <input type="number" id="position1" placeholder="Nhập số vị trí 1">
+                        <input type="number" id="position2" placeholder="Nhập số vị trí 2">
+                        <button onclick="changePosition()" class="btn btn-primary"> Đổi vị trí</button>
+                        <p class="alert alert-success w-50" id="changePosition"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 7: Sắp xếp tăng dần</p>
+                        <button onclick="sorted()" class="btn btn-primary"> Sắp xếp</button>
+                        <p class="alert alert-success w-50" id="sorted"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 8: Tìm số nguyên tố đầu tiên</p>
+                        <button onclick="findFirstPrime()" class="btn btn-primary"> Tìm số</button>
+                        <p class="alert alert-success w-50" id="findFirstPrime"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 9: Đếm số nguyên</p>
+                        <button onclick="countInteger()" class="btn btn-primary"> Đếm</button>
+                        <p class="alert alert-success w-50" id="countInteger"></p>
+                    </div>
+                    <div class="exercise mt-3">
+                        <p>Bài 10: So sánh số âm và dương</p>
+                        <button onclick="compareNumber()" class="btn btn-primary"> So sánh</button>
+                        <p class="alert alert-success w-50" id="compareNumber"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- JavaScrip -->
+    <script src="./js/index.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
